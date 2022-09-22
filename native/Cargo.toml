@@ -1,0 +1,13 @@
+[package]
+name = "jotto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+v8 = "0.51.0"
+
+[build-dependencies]
+cbindgen = "0.24.3"
+
+[lib]
+crate_type = ["cdylib"]
