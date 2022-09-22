@@ -71,7 +71,7 @@
           <compilerArgs combine.children="append">
             <arg>-parameters</arg>
             <arg>--enable-preview</arg>
-            <arg>--add-modules=jdk.incubator.foreign</arg>
+            <!-- <arg>- -add-modules=jdk.incubator.foreign</arg> -->
           </compilerArgs>
         </configuration>
       </plugin>
@@ -111,7 +111,8 @@
             <configuration>
               <executable>java</executable>
               <arguments>
-                <argument>--add-modules=jdk.incubator.foreign</argument>
+                <!-- <argument>- -add-modules=jdk.incubator.foreign</argument> -->
+                <argument>--enable-preview</argument>
                 <argument>--enable-native-access=ALL-UNNAMED</argument>
                 <argument>-Djava.library.path=${basedir}/../native/target/debug</argument>
                 <argument>-classpath</argument>
